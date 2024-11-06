@@ -1,12 +1,11 @@
-
 import {Link} from "react-router-dom";
 import {useState} from "react";
 
-const Continents = ({setUrl}) => {
+const Continents = ({setUrl}: { setUrl: (url: string)=> void}) => {
 
-    const [selected, setSelected] = useState('')
+    const [selected, setSelected] = useState<string>('');
 
-    const getActiveLink = (continent) => {
+    const getActiveLink = (continent: string): string => {
         return selected === continent ?'text-blue-600 font-bold' : 'text-black'
     }
 

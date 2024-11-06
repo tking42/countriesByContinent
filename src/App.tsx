@@ -8,9 +8,9 @@ import 'leaflet/dist/leaflet.css'
 
 
 import {useState} from "react"
-function App():JSX.Element {
+function App() {
 
-    const [url, setUrl] = useState('')
+    const [url, setUrl] = useState<string>('');
 
   return (
       <BrowserRouter>
